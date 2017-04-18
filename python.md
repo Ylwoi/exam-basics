@@ -36,14 +36,17 @@ The application is accepted if:
 
 #### Your answer:
 [add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
+1:keyword to create a new function   
+2:the function name
+3:function parameter
+4:the code block of the function
+5:a variable inside the function
+6:the return statement, this will return a value for another functions in the program
+7:this is the returnable variable, the value of this variable returns to another part of the program to use it
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
 [add your answer here]
+The constructor is special method which is the first in a class. Statements that you put in the constructor will run,
+automatically when you instantiate the class. You can create it with the: "def __init__(self):"
+keywords. 
