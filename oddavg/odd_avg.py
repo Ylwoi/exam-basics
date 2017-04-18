@@ -2,6 +2,7 @@
 # and returns the average value of the odd numbers in the list
 # Create basic unit tests for it with at least 3 different test cases
 
+
 def odd_average(list_of_numbers):
     try:
         odd_counter = 0
