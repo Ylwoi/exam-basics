@@ -15,7 +15,8 @@ class Copy(object):
     def __init__(self):
         self.args = sys.argv
         if len(self.args) == 1:
-            print("Enter after the file name: copy 'source' 'destination'")
+            print("Enter after the python file name: copy 'source' 'destination'")
+            print('Example: python copy.py copy "C:\Greenfox\\test_file.txt" "C:\Greenfox\\Other\\new_file.txt"')
         else:
             self.command = sys.argv[1:]
             if len(self.command) < 2:
