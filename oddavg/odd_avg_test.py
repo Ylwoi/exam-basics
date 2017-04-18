@@ -11,3 +11,6 @@ class TestOddAverage(unittest.TestCase):
 
     def test_odd_average_only_odd_numbers(self):
         self.assertEqual(odd_avg.odd_average([1, 5, 3, 7, 9]), 5)
+
+    def test_odd_average_only_even_numbers(self):
+        self.assertEqual(odd_avg.odd_average([2, 2, 6, 4, 8]), 0)
