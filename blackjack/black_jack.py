@@ -18,8 +18,18 @@ class Card(object):
     def __init__(self):
         color_list = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
         value_list = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
-        self.card = random.choice(value_list) + ' ' + random.choice(color_list)
-        return self.card
+        self.card = [str(random.choice(value_list)), str(random.choice(color_list))]
+
+
+class Deck(object):
+    def __init__(self, deck_number):
+        self.deck_list = []
+        self.count_cards = {'Clubs':0, 'Diamonds':0, 'Hearts':0, 'Spades':0}
+        for card in range(int(deck_number)):
+            self.deck_list.append(Card().card)
+        for card_color in self.deck_list:
+            if card_color[1] == self.count_cards[]
+
 
 
 deck = Deck(12)
