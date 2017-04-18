@@ -3,10 +3,13 @@
 # Create basic unit tests for it with at least 3 different test cases
 
 def odd_average(list_of_numbers):
-    odd_counter = 0
-    odd_sum = 0
-    for number in list_of_numbers:
-        if number % 2 != 0:
-            odd_counter += 1
-            odd_sum += number
-    return odd_sum/odd_counter
+    try:
+        odd_counter = 0
+        odd_sum = 0
+        for number in list_of_numbers:
+            if number % 2 != 0:
+                odd_counter += 1
+                odd_sum += number
+        return odd_sum/odd_counter
+    except ZeroDivisionError:
+        return 0
