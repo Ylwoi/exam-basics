@@ -6,3 +6,20 @@
 # No destination provided
 # When both arguments provided and the source is a file
 # Read all contents from it and write it to the destination
+
+
+import sys
+
+
+class Copy(object):
+    def __init__(self):
+        self.args = sys.argv
+        if len(self.args) == 1:
+            print("Enter after the file name: copy [source] [destination]")
+        else:
+            self.command = sys.argv[1:]
+            if len(self.command) < 2:
+                print('No destination provided')
+
+
+copy = Copy()
